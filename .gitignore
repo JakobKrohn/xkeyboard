@@ -1,0 +1,6 @@
+unmodified_xkeymap.xkb
+custom_keymap.xkb
+*.patch
+*.rej
+*.orig
+
