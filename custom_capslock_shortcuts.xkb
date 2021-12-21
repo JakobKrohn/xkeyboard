@@ -1340,8 +1340,9 @@ xkb_symbols "pc+us+inet(evdev)" {
         symbols[Group1]= [               g,               G ]
     };
     key <AC06> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               h,               H ]
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               h,               H,               XF86AudioNext ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<I171>, clearmods=Lock)]
     };
     key <AC07> {
         type= "CUST_CAPSLOCK",
