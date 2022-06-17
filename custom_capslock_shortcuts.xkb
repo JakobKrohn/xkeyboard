@@ -1260,11 +1260,7 @@ xkb_symbols "pc+us+inet(evdev)" {
     key <AE11> {         [           minus,      underscore ] };
     key <AE12> {         [           equal,            plus ] };
     key <BKSP> {         [       BackSpace,       BackSpace ] };
-    key  <TAB> {         
-        type= "CUST_CAPSLOCK",
-        symbols[Group1]= [             Tab,    ISO_Left_Tab, Control_L ], 
-        actions[Group1]= [      NoAction(),      NoAction(),   SetMods(modifiers=Control)]
-    };
+    key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
     key <AD01> {
         type= "ALPHABETIC",
         symbols[Group1]= [               q,               Q ]
