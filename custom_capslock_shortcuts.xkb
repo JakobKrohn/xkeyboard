@@ -1275,8 +1275,9 @@ xkb_symbols "pc+us+inet(evdev)" {
         actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGUP>, clearmods=Lock, modifiers=Control) ]
     };
     key <AD03> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               e,               E ]
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               e,               E,                XF86AudioNext ], 
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<I171>) ]
     };
     key <AD04> {
         type= "ALPHABETIC",
@@ -1317,8 +1318,9 @@ xkb_symbols "pc+us+inet(evdev)" {
     key <RTRN> {         [          Return ] };
     key <LCTL> {         [       Control_L ] };
     key <AC01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               a,               A ]
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               a,               A ], 
+        actions[Group1]= [      NoAction(),      NoAction(),   SetMods(modifiers=Control); ]
     };
     key <AC02> {
         type= "CUST_CAPSLOCK",
