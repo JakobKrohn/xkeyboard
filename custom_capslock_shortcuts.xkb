@@ -1320,12 +1320,12 @@ xkb_symbols "pc+us+inet(evdev)" {
     key <AC01> {
         type= "CUST_CAPSLOCK",
         symbols[Group1]= [               a,               A ], 
-        actions[Group1]= [      NoAction(),      NoAction(),   SetMods(modifiers=Control); ]
+        actions[Group1]= [      NoAction(),      NoAction(),   SetMods(modifiers=Control) ]
     };
     key <AC02> {
         type= "CUST_CAPSLOCK",
         symbols[Group1]= [               s,               S ], 
-        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGDN>, clearmods=Lock, modifiers=Control) ]
+        actions[Group1]= [      NoAction(),      NoAction(),   SetMods(modifiers=Shift) ]
     };
     key <AC03> {
         type= "CUST_CAPSLOCK",
