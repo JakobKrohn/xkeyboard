@@ -751,7 +751,8 @@ xkb_compatibility "complete" {
         action= LockMods(modifiers=Shift);
     };
     interpret Num_Lock+AnyOf(all) {
-        action= LockMods(modifiers=Control);
+        virtualModifier= NumLock;
+        action= LockMods(modifiers=NumLock);
     };
     interpret ISO_Level3_Shift+AnyOf(all) {
         virtualModifier= LevelThree;
