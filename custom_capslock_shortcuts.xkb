@@ -1260,13 +1260,14 @@ xkb_symbols "pc+us+inet(evdev)" {
     key <BKSP> {         [       BackSpace,       BackSpace ] };
     key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
     key <AD01> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               q,               Q ]
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               q,               Q ], 
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGUP>, clearmods=Lock, modifiers=Control) ]
     };
     key <AD02> {
         type= "CUST_CAPSLOCK",
         symbols[Group1]= [               w,               W ], 
-        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGUP>, clearmods=Lock, modifiers=Control) ]
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGDN>, clearmods=Lock, modifiers=Control) ]
     };
     key <AD03> {
         type= "CUST_CAPSLOCK",
