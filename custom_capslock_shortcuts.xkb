@@ -1271,16 +1271,18 @@ xkb_symbols "pc+us+inet(evdev)" {
     };
     key <AD03> {
         type= "CUST_CAPSLOCK",
-        symbols[Group1]= [               e,               E,                XF86AudioNext ], 
-        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<I171>) ]
+        symbols[Group1]= [               e,               E,                XF86Launch8 ], 
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<FK17>) ]
     };
     key <AD04> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               r,               R ]
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               r,               R,                XF86Launch9 ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<FK18>) ]
     };
     key <AD05> {
-        type= "ALPHABETIC",
-        symbols[Group1]= [               t,               T ]
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               t,               T,                XF86AudioRaiseVolume ], 
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<VOL+>) ]
     };
     key <AD06> {
         type= "ALPHABETIC",
