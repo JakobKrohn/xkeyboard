@@ -1246,14 +1246,30 @@ xkb_symbols "pc+us+inet(evdev)" {
 
     key  <ESC> {         [          Escape ] };
     key <AE01> {         [               1,          exclam ] };
-    key <AE02> {         [               2,              at ] };
-    key <AE03> {         [               3,      numbersign ] };
+    key <AE02> {
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               2,               at,                F2 ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<FK02>, clearmods=Lock) ]
+    };
+    key <AE03> {
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               3,               numbersign,                F3 ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<FK03>, clearmods=Lock) ]
+    };
     key <AE04> {         [               4,          dollar ] };
-    key <AE05> {         [               5,         percent ] };
+    key <AE05> {
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               5,               percent,                F5 ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<FK05>, clearmods=Lock) ]
+    };
     key <AE06> {         [               6,     asciicircum ] };
     key <AE07> {         [               7,       ampersand ] };
     key <AE08> {         [               8,        asterisk ] };
-    key <AE09> {         [               9,       parenleft ] };
+    key <AE09> {
+        type= "CUST_CAPSLOCK",
+        symbols[Group1]= [               9,               parenleft,                F9 ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<FK09>, clearmods=Lock) ]
+    };
     key <AE10> {         [               0,      parenright ] };
     key <AE11> {         [           minus,      underscore ] };
     key <AE12> {         [           equal,            plus ] };
@@ -1261,7 +1277,7 @@ xkb_symbols "pc+us+inet(evdev)" {
     key  <TAB> {         [             Tab,    ISO_Left_Tab ] };
     key <AD01> {
         type= "CUST_CAPSLOCK",
-        symbols[Group1]= [               q,               Q,                Escape ], //
+        symbols[Group1]= [               q,               Q,                Escape ],
         actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<ESC>, clearmods=Lock) ]
     };
     key <AD02> {
@@ -1326,8 +1342,8 @@ xkb_symbols "pc+us+inet(evdev)" {
     };
     key <AC03> {
         type= "CUST_CAPSLOCK",
-        symbols[Group1]= [               d,               D, BackSpace ], 
-        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<BKSP>, clearmods=Lock) ]
+        symbols[Group1]= [               d,               D, Delete ], 
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<DELE>, clearmods=Lock) ]
     };
     key <AC04> {
         type= "CUST_CAPSLOCK",
